@@ -1,0 +1,178 @@
+  /* Chat flotante 
+  #chatModal {
+    display: none; 
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+    width: 350px;
+    height: 500px;
+    background: rgb(73, 73, 73);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+  }
+
+  #chatHeader {
+    background: repeating-linear-gradient(#3e036e, rgb(51, 51, 51)); ;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #chatBody {
+    padding: 10px;
+    height: 380px;
+    overflow-y: auto;
+    background: #383838;
+    color: white;
+  }
+
+  #chatFooter {
+    display: flex;
+    padding: 10px;
+    background: #3f3f3f;
+  }
+
+  #chatFooter input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #4d4c4c;
+    color: rgb(255, 255, 255);
+    background-color: #313131;
+    border-radius: 5px;
+  }
+
+  #chatFooter button {
+    margin-left: 5px;
+    padding: 8px 12px;
+    background: #4f038d;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #chatFooter button:hover {
+    background: #8704a8;
+  }
+  */
+
+  #chatModal {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+    width: 300px;
+    height: 500px;
+    background: rgb(30,30,30);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    overflow: hidden;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#chatHeader {
+    background: #1b1b1b;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil-principal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.nombre-usuario {
+    font-weight: bold;
+}
+
+.estado-dropdown {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu-estado {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: #2a2a2a;
+    border: 1px solid #555;
+    list-style: none;
+    padding: 5px 0;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.menu-estado li {
+    padding: 5px 10px;
+}
+
+.menu-estado li:hover {
+    background: #555;
+}
+
+#chatBody {
+    padding: 10px;
+    height: 440px;
+    overflow-y: auto;
+    background: #262626;
+}
+
+.amigos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.amigo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    background: #333;
+    border-radius: 5px;
+}
+
+.info-amigo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+.estado-juego {
+    font-size: 12px;
+    color: #aaa;
+}
+
+
+.estado-conexion {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: green; /* Verde = conectado, rojo = desconectado */
+}
+
+
+

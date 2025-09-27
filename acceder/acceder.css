@@ -1,0 +1,87 @@
+/* Estilos generales para el login */
+.pagina-login {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #000000, #7c23a5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Caja del formulario */
+.pagina-login .login-container {
+  background: #494848;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  width: 350px;
+  height: 300px;
+  text-align: center;
+}
+
+/* Título */
+.pagina-login h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  background-color: #494848;
+}
+
+/* Inputs */
+.pagina-login input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ad16db;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Botón */
+.pagina-login button {
+  width: 100%;
+  padding: 10px;
+  background: #890fb9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-sizing: border-box;
+}
+
+.pagina-login button:hover {
+  background: #55c167;
+}
+
+/* Link */
+.pagina-login a {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #667eea;
+  text-decoration: none;
+}
+
+.pagina-login a:hover {
+  text-decoration: underline;
+}
+
+/* Botón Volver en la esquina superior derecha */
+.pagina-login .boton-volver-superior {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #890fb9;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.pagina-login .boton-volver-superior:hover {
+  background-color: #55c167;
+}
+

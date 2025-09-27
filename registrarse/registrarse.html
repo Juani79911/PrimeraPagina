@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceder</title>
+  <link rel="stylesheet" href="registrarse.css">
+
+  <!-- 📌 CSS de Flatpickr -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="../registrarse/registrarse.css">
+</head>
+<body class="pagina-login">
+  <a href="../acceder/acceder.html" class="boton-volver-superior">Volver</a>
+  
+  <div class="login-container">
+    <h2>Registrarse</h2>
+    <form class="type-formulario">
+  <input id="nombre" type="text" placeholder="Nombre de usuario" required>
+  <input id="password" type="password" placeholder="Contraseña" 
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        title="La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula y un número." required>
+  <input id="passwordConfirm" type="password" placeholder="Confirmar contraseña" required>
+  <input id="email" type="email" placeholder="Correo electrónico" required>
+  <input id="emailConfirm" type="email" placeholder="Confirmar correo electrónico" required>
+  <input type="text" id="miCalendario" placeholder="Fecha de nacimiento" required>
+  <button type="submit">Registrarse</button>
+</form>
+<p id="mensaje"></p>
+  </div>
+
+  <!-- 📌 JS de Flatpickr -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("#miCalendario", {
+      dateFormat: "d/m/Y",  // formato: 11/09/2025
+      locale: "es",         // idioma español
+      maxDate: "today",     // no deja elegir fechas futuras
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  flatpickr("#miCalendario", {
+    dateFormat: "d/m/Y",
+    locale: "es",
+    maxDate: "today",
+    monthSelectorType: "static" // acá activás flechas en lugar de selects
+  });
+</script>
+<script src="registrarse.js"></script>
+</body>
+</html>

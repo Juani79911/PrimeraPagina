@@ -1,0 +1,193 @@
+<!DOCTYPE <html>
+<html lang="es">
+<head>
+<link rel="icon" href="../pagina/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="pagina.css"> 
+    <link rel="stylesheet" href="../pagina/amigos y chat.js/amigos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="pagina">
+    <header>
+          <nav class="navbar">
+        <ul>
+            <li class="dropdown">
+                <a href="#">Inicio</a>
+                <ul class="submenu">
+                    <li><a href="#">Recomendaciones</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Lista de deseados</a></li>
+                </ul>
+            </li>
+            <li><a href="./pagina.html">Bibloteca</a></li>
+            <!--Menu de usuario -->
+            <li class="dropdown usuario">
+                <a href="#">Usuario</a>
+                <ul class="submenu">
+                  <label for="toggle"></label>
+                  <input type="checkbox" id="toggle" hidden>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="../actividad.html">Actividad</a></li>
+                    <li><a href="#">Amigos</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#">Contacto</a></li>
+            <li class="acceder"><a href="../pagina/acceder/acceder.html">Acceder</a></li>
+        </ul>
+</nav>
+
+    </header>
+
+    <main id="contenido-principal">
+      <div class="contenedor-juegos">
+        <div class="juego">
+            <img src="../pagina/img/csgo.jpg" alt="Counter-Strike: Global Offensive">
+            <h3>Counter-Strike: Global Offensive</h3>
+            <div class="precio">
+              <button>Comprar</button>
+              <h3 class="precioCosto">Próximamente</h3>
+            </div>
+        </div>
+        <div class="juego">
+            <img src="../pagina/img/l4d2.jpg" alt="Left 4 Dead 2">
+            <h3>Left 4 Dead 2</h3>
+            <div class="precio">
+              <button>Comprar</button>
+              <h3 class="precioCosto">Próximamente</h3>
+            </div>
+        </div>
+        <div class="juego">
+            <img src="../pagina/img/genshin impact.jpg" alt="Genshin Impact">
+            <h3>Genshin Impact</h3>
+            <div class="precio">
+              <button>Comprar</button>
+              <h3 class="precioCosto">Próximamente</h3>
+            </div>
+        </div>
+        <div class="juego">
+            <img src="../pagina/img/lol.jpg" alt="League of Legends">
+            <h3>League of Legends</h3>
+            <div class="precio">
+              <button>Comprar</button>
+              <h3 class="precioCosto">Próximamente</h3>
+            </div>
+        </div>
+        <div class="juego">
+            <img src="../pagina/img/valorant.jpg" alt="Valorant">
+            <h3>Valorant</h3>
+            <div class="precio">
+              <button>Comprar</button>
+              <h3 class="precioCosto">Próximamente</h3>
+            </div>
+        </div>
+        <div class="juego">
+            <img src="../pagina/img/hollow.avif" alt="Hollow Knight">
+            <h3>Hollow Knight</h3>
+            <div class="precio">
+              <button>Comprar</button>
+              <h3 class="precioCosto">Próximamente</h3>
+            </div>
+        </div>
+        <div class="juego">
+            <img src="../pagina/img/silksong.png" alt="Silksong">
+            <h3>Silksong</h3>
+            <div class="precio">
+              <button>Comprar</button>
+              <h3 class="precioCosto">Próximamente</h3>
+            </div>
+        </div>
+        <div class="juego">
+            <img src="../pagina/img/hogwarts.avif" alt="Hogwarts Legacy">
+            <h3>Hogwarts Legacy</h3>
+            <div class="precio">
+              <button>Comprar</button>
+              <h3 class="precioCosto">Próximamente</h3>
+            </div>        
+      </div>
+
+    </main>
+    <footer>
+            <ul class="footer-nav">
+                <li class="descargas"><a href="#"> <i class="fas fa-download"></i>Elementos descagados</a></li>
+                <li class="amigos"><a onclick="abrirChatYAmigos()"><i class="fas fa-users"></i>Amigos y chat</a><a href="#"></a></li>
+                <div id="chatModal">
+  <div id="chatHeader">
+    <div class="perfil-principal">
+      <img src="img/avatar.jpg" alt="Avatar" class="avatar">
+      <span class="nombre-usuario">Juani79911</span>
+      <div class="estado-dropdown">
+        <span id="estadoActual">Conectado ▼</span>
+        <ul class="menu-estado">
+          <li data-estado="Conectado">Conectado</li>
+          <li data-estado="Ausente">Ausente</li>
+          <li data-estado="Invisible">Invisible</li>
+        </ul>
+      </div>
+    </div>
+    <span style="cursor:pointer;" onclick="cerrarChatYAmigos()">✖</span>
+  </div>
+  <div id="chatBody">
+    <div class="amigos">
+      <!-- Ejemplo de amigo -->
+      <div class="amigo">
+        <img src="img/tomy avatar.png" alt="Avatar" class="avatar">
+        <div class="info-amigo">
+          <span class="nombre">Tomy</span>
+          <span class="estado-juego">CSGO</span>
+        </div>
+         <div class="estado-conexion"></div> <!-- Estado a la derecha -->
+      </div>
+      <div class="amigo">
+        <img src="img/caniche avatar.jpg" alt="Avatar" class="avatar">
+        <div class="info-amigo">
+          <span class="nombre">Caniche</span>
+          <span class="estado-juego">Left 4 Dead 2</span>
+        </div>
+        <div class="estado-conexion"></div> <!-- Estado a la derecha -->
+      </div>
+      <div class="amigo">
+        <img src="img/lula avatar.jpg" alt="Avatar" class="avatar">
+        <div class="info-amigo">
+          <span class="nombre">Lula</span>
+          <span class="estado-juego">Genshin Impact</span>
+        </div>
+         <div class="estado-conexion"></div> <!-- Estado a la derecha -->
+      </div>
+      <div class="amigo">
+        <img src="img/avatar joseph.jpg" alt="Avatar" class="avatar">
+        <div class="info-amigo">
+          <span class="nombre">Joseph</span>
+          <span class="estado-juego">League of Legends</span>
+        </div>
+         <div class="estado-conexion"></div> <!-- Estado a la derecha -->
+      </div>
+      <div class="amigo">
+        <img src="img/tony avatar.jpg" alt="Avatar" class="avatar">
+        <div class="info-amigo">
+          <span class="nombre">Tony</span>
+          <span class="estado-juego">League of Legends</span>
+        </div>
+         <div class="estado-conexion"></div> <!-- Estado a la derecha -->
+      </div>
+      <div class="amigo">
+        <img src="img/reysincorona avatar.gif" alt="Avatar" class="avatar">
+        <div class="info-amigo">
+          <span class="nombre">Rey sin corona</span>
+          <span class="estado-juego">League of Legends</span>
+        </div>
+         <div class="estado-conexion"></div> <!-- Estado a la derecha -->
+      </div><!-- Agregar más amigos igual -->
+    </div>
+  </div>
+</div>
+            </ul>
+            
+    </footer>
+<script src="../pagina/amigos y chat.js/amigos.js"></script>
+<script src="pagina.js"></script>
+</body>
+</html>        
+    
